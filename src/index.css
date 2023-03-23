@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+.progressIndicatorBg {
+  background-image: url(../public/img/bg-sidebar-mobile.svg);
+  background-blend-mode: saturation;
+}
+
+@layer components {
+  .progressStep {
+    @apply text-white font-medium border text-center w-[33px] text-sm py-[6px] rounded-full;
+  }
+  .infoInput {
+    @apply border-[1.5px] rounded-md py-2 px-4
+}
+}
